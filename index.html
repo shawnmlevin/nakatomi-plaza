@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nakatomi Plaza</title>
+<meta name="description" content="Nakatomi Plaza, Century City. Home of Nakatomi Trading Corporation.">
+<meta name="theme-color" content="#0b1224">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b1224'/%3E%3Crect x='11' y='5' width='10' height='23' fill='%23b06d42'/%3E%3Crect x='11' y='9' width='10' height='2' fill='%23ffd27a'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,600;1,400;1,600&family=Jost:wght@400;500;600&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="#top">NAKATOMI <span>PLAZA</span></a>
+  <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav id="nav">
+    <a href="#directory">Directory</a>
+    <a href="#tenants">Tenants</a>
+    <a href="#party">Holiday Party</a>
+    <a href="#careers">Careers</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section id="directory" class="block">
+    <div class="wrap">
+      <p class="kicker">Nakatomi Plaza · Lobby</p>
+      <h2>Building Directory</h2>
+      <p class="sub">Search by name, department, or floor.</p>
+      <div class="terminal" role="search">
+        <div class="screen" id="screen" aria-live="polite"></div>
+        <form class="prompt" id="dir-form" autocomplete="off">
+          <label for="dir-q">&gt;</label>
+          <input id="dir-q" name="q" type="text" spellcheck="false" autocapitalize="off" placeholder="TYPE A NAME" aria-label="Search the building directory">
+          <button type="submit">Enter</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section id="tenants" class="block alt">
+    <div class="wrap">
+      <p class="kicker">Tenants &amp; Services</p>
+      <h2>Who's in the building</h2>
+      <div class="cards">
+        <article class="card">
+          <p class="floor">Floor 30</p>
+          <h3>Executive Offices</h3>
+          <p>Nakatomi Trading Corporation headquarters. Tonight: the annual holiday party.</p>
+        </article>
+        <article class="card">
+          <p class="floor">Floor 19 · Suite 1964</p>
+          <h3>Dental Services</h3>
+          <p>Gentle, modern dentistry. Accepting new patients of every size, including the abominable ones.</p>
+        </article>
+        <article class="card">
+          <p class="floor">Floor 12</p>
+          <h3>Island Operations</h3>
+          <p>Home of the Misfit Toys Division. Every toy deserves a home.</p>
+        </article>
+        <article class="card">
+          <p class="floor">Floor 35</p>
+          <h3>Miser Bros. Climate Control</h3>
+          <p>Heating by Mr. H. Cooling by Mr. C. The building is always too hot or too cold, never just right.</p>
+        </article>
+        <article class="card">
+          <p class="floor">Level B3</p>
+          <h3>Cornelius Mining &amp; Exploration</h3>
+          <p>Silver and gold, mostly. Recently struck peppermint. Please do not lick the equipment.</p>
+        </article>
+        <article class="card">
+          <p class="floor">Rooftop</p>
+          <h3>Reindeer Landing</h3>
+          <p>Rooftop parking for reindeer. On foggy nights, follow the red light.</p>
+        </article>
+        <article class="card bakery">
+          <p class="floor">Ground Floor</p>
+          <h3 data-bakery="name"></h3>
+          <p>Fresh every morning. Today's board:</p>
+          <ul class="specials" id="specials"></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="party" class="block party">
+    <div class="wrap">
+      <div class="invite">
+        <p class="kicker">You are cordially invited</p>
+        <h2>The Nakatomi Holiday Party</h2>
+        <p class="featuring">Featuring <em data-party="entertainment"></em></p>
+        <ul class="shows" id="shows"></ul>
+        <dl>
+          <div><dt>Where</dt><dd data-party="venue"></dd></div>
+          <div><dt>Dress</dt><dd data-party="dressCode"></dd></div>
+          <div><dt>Catering</dt><dd data-bakery="name"></dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section id="careers" class="block">
+    <div class="wrap">
+      <p class="kicker">Careers</p>
+      <h2>Now hiring</h2>
+      <div class="cards" id="jobs"></div>
+    </div>
+  </section>
+
+  <section id="vault" class="block vault" hidden>
+    <div class="wrap">
+      <p class="kicker">Floor 30 · Authorized Personnel Only</p>
+      <h2>The Vault</h2>
+      <div class="locks" id="locks" aria-hidden="true"></div>
+      <form class="vault-form" id="vault-form" autocomplete="off">
+        <input id="vault-pw" type="password" placeholder="Access code" aria-label="Vault access code">
+        <button type="submit">Open</button>
+      </form>
+      <p class="hint" id="vault-hint"></p>
+      <div class="vault-msg" id="vault-msg" hidden></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p class="brand">NAKATOMI <span>PLAZA</span></p>
+  <p>Century City, California</p>
+  <p><a href="#vault" id="vault-link">Authorized personnel</a></p>
+  <p class="legal">© 1988 Nakatomi Trading Corporation. A holiday parody, not affiliated with any film studio.</p>
+</footer>
+
+<div class="snow" aria-hidden="true"></div>
+<script src="eggs.js"></script>
+<script src="vault.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
