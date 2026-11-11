@@ -22,7 +22,7 @@ window.NAKATOMI = {
     name: "Sugar Plum Bakery",
     baker: "[Daughter's initial or nickname]",
     specials: [
-      "Donuts (her specialty)",
+      "Donuts",
       "Hot chocolate, served hot",
       "Gingerbread, any shape",
       "Twinkies (by request of LAPD)",
