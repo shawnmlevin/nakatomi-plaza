@@ -58,8 +58,8 @@ window.NAKATOMI = {
     { hidden: true, keys: ["bumble"], name: "Bumble", dept: "Former Lobby Visitor", floor: 1, note: "Teeth removed. Harmless. Now places the star on the lobby tree." },
     { hidden: true, keys: ["rudolph"], name: "Rudolph", dept: "Lead Navigator, Night Operations", floor: "R", note: "Employee of the year, every year since 1964" },
     { hidden: true, keys: ["yukon", "cornelius", "yukoncornelius"], name: "Cornelius, Y.", dept: "Chief Prospector", floor: "B3", note: "Please do not lick the equipment" },
-    { hidden: true, keys: ["[son's name]"], name: "[Son]", dept: "[his department]", floor: "[birthday day]", note: "[inside joke]" },
-    { hidden: true, keys: ["[daughter's name]"], name: "[Daughter]", dept: "[her department]", floor: "[birthday day]", note: "[inside joke]" },
+    { hidden: true, keys: ["casey"], name: "Casey", dept: "Penn Medicine", floor: 17 },
+    { hidden: true, keys: ["jules"], name: "Jules", dept: "Nee Doh Factory", floor: 22 },
   ],
 
   careers: [
@@ -73,5 +73,5 @@ window.NAKATOMI = {
   ],
 
   // EGG: the clue printed under the vault keypad
-  vaultHint: "Hint: [something only the kids would know]",
+  vaultHint: "Hint: Casey and Jules know.",
 };
