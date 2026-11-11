@@ -73,5 +73,5 @@ window.NAKATOMI = {
   ],
 
   // EGG: the clue printed under the vault keypad
-  vaultHint: "Hint: Casey and Jules know.",
+  vaultHint: "",
 };
