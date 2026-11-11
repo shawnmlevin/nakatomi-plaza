@@ -80,6 +80,8 @@ nav a:hover { color: var(--gold-lt); }
 .screen .row { display: grid; grid-template-columns: 1fr auto; gap: 12px; padding: 2px 0; border-bottom: 1px dashed #7dff9a22; }
 .screen .row small { grid-column: 1 / -1; opacity: .7; font-size: 19px; }
 .screen .hit { color: #fff7b0; text-shadow: 0 0 8px #fff7b0aa; }
+.screen .reply { padding: 4px 0; }
+.screen .suggest { background: none; border: 0; border-bottom: 1px dashed currentColor; padding: 0; color: inherit; font: inherit; text-shadow: inherit; cursor: pointer; }
 .prompt { display: flex; gap: 8px; align-items: center; margin-top: 12px; border-top: 1px solid #7dff9a44; padding-top: 12px; }
 .prompt label { font-size: 26px; }
 .prompt input { flex: 1; min-width: 0; background: transparent; border: 0; outline: 0; color: var(--phosphor); font: 24px var(--mono); text-transform: uppercase; caret-color: var(--phosphor); }

@@ -40,7 +40,11 @@
     if (!nq) { screen.innerHTML = header + pub.map((d) => row(d)).join(""); return; }
     const secret = N.directory.filter((d) => d.hidden && d.keys.some((k) => norm(k) === nq));
     const matches = pub.filter((d) => norm(d.name + d.dept + (d.note || "")).includes(nq) || norm(d.floor) === nq);
-    const all = [...secret.map((d) => row(d, true)), ...matches.map((d) => row(d))];
+    const reply = (d) =>
+      `<div class="reply hit">${esc(d.reply.toUpperCase())}` +
+      (d.suggest ? `\nDID YOU MEAN <button type="button" class="suggest" data-q="${esc(d.suggest)}">${esc(d.suggest.toUpperCase())}</button>?` : "") +
+      `</div>`;
+    const all = [...secret.map((d) => (d.reply ? reply(d) : row(d, true))), ...matches.map((d) => row(d))];
     screen.innerHTML = header + (all.length ? all.join("") : `NO LISTING FOUND FOR "${esc(q.toUpperCase())}".\nPLEASE SEE THE FRONT DESK.`);
   }
   // Typewriter boot, then the full listing
@@ -53,6 +57,10 @@
     }, 45);
   })();
   input.addEventListener("input", () => render(input.value));
+  screen.addEventListener("click", (e) => {
+    const b = e.target.closest(".suggest");
+    if (b) { input.value = b.dataset.q; render(input.value); }
+  });
   $("#dir-form").addEventListener("submit", (e) => {
     e.preventDefault();
     render(input.value);
