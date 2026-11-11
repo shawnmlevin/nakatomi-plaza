@@ -59,6 +59,12 @@ nav a:hover { color: var(--gold-lt); }
   .lede { margin-left: 0; }
 }
 
+/* Welcome banner */
+.welcome { background: radial-gradient(ellipse at top, #24335a, var(--navy) 75%); color: #fff; text-align: center; padding: 48px 20px 44px; border-bottom: 3px solid var(--gold); }
+.welcome .kicker { color: var(--gold-lt); }
+.welcome h1 { font-size: clamp(36px, 9vw, 60px); font-style: italic; margin: 6px 0 24px; }
+.welcome h1 em { color: var(--gold-lt); }
+
 /* Sections */
 .block { padding: 72px 0; }
 .block.alt { background: var(--cream-2); }

@@ -47,6 +47,7 @@ window.NAKATOMI = {
     { name: "Seasonal Staffing", dept: "Elf Relations", floor: 12 },
     { name: "The Candy Man Can, Inc.", dept: "Confections & Imagination", floor: 7 },
     { name: "Hot Chocolate Service", dept: "Express Beverage Cart", floor: 1, note: "Departs 11:55 PM" },
+    { name: "Drosselmeyer Clock & Toy Repair", dept: "Clocks & Toys", floor: 21 },
     { name: "Argyle", dept: "Limousine Services", floor: "P1", note: "Waiting" },
     { name: "Powell, A.", dept: "LAPD Liaison", floor: 1, note: "Twinkie supply" },
     { name: "Building Security", dept: "Main Lobby", floor: 1 },
@@ -64,6 +65,7 @@ window.NAKATOMI = {
   careers: [
     { title: "Associate Dentist", where: "Floor 19", text: "Not everyone is cut out for toy-making. If you have other ambitions, we want to hear from you." },
     { title: "Pastry Chef", where: "Sugar Plum Bakery", text: "Early mornings, big parties, and the occasional nutcracker emergency. Please note: nothing we bake is gluten-free, and nothing ever will be." },
+    { title: "Train Conductor", where: "Express Platform · Level P1", text: "Must be comfortable punching tickets. Hot chocolate service included." },
     { title: "Staff Podiatrist", where: "Floor 30", text: "Long flight? Take off your shoes and make fists with your toes. Walk-ins welcome." },
     { title: "Climate Technician", where: "Miser Bros. · Floor 35", text: "Must keep the peace between two brothers with very different opinions about the thermostat." },
     { title: "Pest Control Specialist", where: "Level B2", text: "Ongoing rodent situation. Experience working alongside toy soldiers preferred." },
