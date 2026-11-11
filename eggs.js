@@ -26,7 +26,6 @@ window.NAKATOMI = {
       "Hot chocolate, served hot",
       "Gingerbread, any shape",
       "Twinkies (by request of LAPD)",
-      "Party trays for the 30th floor",
     ],
   },
 
@@ -63,6 +62,7 @@ window.NAKATOMI = {
   ],
 
   careers: [
+    { title: "Squire", where: "Office of Lord Tannebaum & Lady Holly", text: "Opens every event with a formal welcome. Powdered wig provided. Must be able to project to the back row." },
     { title: "Associate Dentist", where: "Floor 19", text: "Not everyone is cut out for toy-making. If you have other ambitions, we want to hear from you." },
     { title: "Pastry Chef", where: "Sugar Plum Bakery", text: "Early mornings, big parties, and the occasional nutcracker emergency. Please note: nothing we bake is gluten-free, and nothing ever will be." },
     { title: "Train Conductor", where: "Express Platform · Level P1", text: "Must be comfortable punching tickets. Hot chocolate service included." },
