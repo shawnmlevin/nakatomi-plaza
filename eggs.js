@@ -61,6 +61,9 @@ window.NAKATOMI = {
     { hidden: true, keys: ["jules"], name: "Jules", dept: "NeeDoh Factory", floor: 22 },
     // A "reply" entry answers instead of listing; "suggest" offers a tap-to-search
     { hidden: true, keys: ["juliet"], reply: "Nope.", suggest: "Jules" },
+    { hidden: true, keys: ["john mcclane", "mcclane", "john mcclain", "mcclain"], name: "McClane, J.", dept: "Visitor, NYPD", floor: 30, note: "Came out to the coast for a few laughs" },
+    { hidden: true, keys: ["buddy", "buddy the elf"], name: "Buddy", dept: "Elf Relations, on loan from the North Pole", floor: 12, note: "Smiling's his favorite" },
+    { hidden: true, keys: ["kevin mccallister", "mccallister", "kevin"], name: "McCallister, K.", dept: "Home Security Consulting", floor: 8, note: "Accidentally left behind. Building fully booby-trapped." },
   ],
 
   careers: [
