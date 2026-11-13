@@ -3,6 +3,14 @@
   const $ = (s, el = document) => el.querySelector(s);
   const $$ = (s, el = document) => [...el.querySelectorAll(s)];
   const norm = (s) => String(s).toLowerCase().replace(/[^a-z0-9]/g, "");
+  // GoatCounter events (each counted once per page visit)
+  const tracked = new Set();
+  const track = (name) => {
+    if (tracked.has(name)) return;
+    tracked.add(name);
+    const send = () => window.goatcounter && window.goatcounter.count && window.goatcounter.count({ path: name, title: name, event: true });
+    if (window.goatcounter && window.goatcounter.count) send(); else setTimeout(send, 1500);
+  };
   const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
   // ---- Fill content from eggs.js ----
@@ -39,6 +47,7 @@
     const nq = norm(q);
     if (!nq) { screen.innerHTML = header + pub.map((d) => row(d)).join(""); return; }
     const secret = N.directory.filter((d) => d.hidden && d.keys.some((k) => norm(k) === nq));
+    secret.forEach((d) => track("secret-" + norm(d.keys[0])));
     const matches = pub.filter((d) => norm(d.name + d.dept + (d.note || "")).includes(nq) || norm(d.floor) === nq);
     const reply = (d) =>
       `<div class="reply hit">${esc(d.reply.toUpperCase())}` +
@@ -57,6 +66,10 @@
     }, 45);
   })();
   input.addEventListener("input", () => render(input.value));
+  $("#shows").addEventListener("click", (e) => {
+    const a = e.target.closest(".rsvp");
+    if (a) track("rsvp-" + norm(a.closest("li").querySelector(".when").innerText));
+  });
   screen.addEventListener("click", (e) => {
     const b = e.target.closest(".suggest");
     if (b) { input.value = b.dataset.q; render(input.value); }
@@ -100,6 +113,7 @@
       const out = $("#vault-msg");
       out.textContent = msg;
       out.hidden = false;
+      track("vault-opened");
       form.hidden = true;
       $("#vault-hint").hidden = true;
       snow();
