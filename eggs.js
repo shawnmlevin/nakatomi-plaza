@@ -68,7 +68,7 @@ window.NAKATOMI = {
     { title: "Associate Dentist", where: "Floor 19", text: "Not everyone is cut out for toy-making. If you have other ambitions, we want to hear from you." },
     { title: "Pastry Chef", where: "Sugar Plum Bakery", text: "Early mornings, big parties, and the occasional nutcracker emergency. Please note: nothing we bake is gluten-free, and nothing ever will be." },
     { title: "Train Conductor", where: "Express Platform · Level P1", text: "Must be comfortable punching tickets. Hot chocolate service included." },
-    { title: "Staff Podiatrist", where: "Floor 30", text: "Long flight? Take off your shoes and make fists with your toes. Walk-ins welcome." },
+    { title: "Overnight Surveillance Associate", where: "Any shelf, any floor", text: "Must remain perfectly still while staff are present. Relocates nightly. Reports directly to the North Pole. Please do not touch." },
     { title: "Climate Technician", where: "Miser Bros. · Floor 35", text: "Must keep the peace between two brothers with very different opinions about the thermostat." },
     { title: "Pest Control Specialist", where: "Level B2", text: "Ongoing rodent situation. Experience working alongside toy soldiers preferred." },
     { title: "Prospector", where: "Cornelius Mining · Level B3", text: "Searching for silver and gold. Bring your own pickaxe. Peppermint experience a plus." },
