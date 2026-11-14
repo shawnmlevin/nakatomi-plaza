@@ -63,6 +63,9 @@ window.NAKATOMI = {
     { hidden: true, keys: ["juliet"], reply: "Nope.", suggest: "Jules" },
     { hidden: true, keys: ["john mcclane", "mcclane", "john mcclain", "mcclain"], name: "McClane, J.", dept: "Visitor, NYPD", floor: 30, note: "Came out to the coast for a few laughs" },
     { hidden: true, keys: ["buddy", "buddy the elf"], name: "Buddy", dept: "Elf Relations, on loan from the North Pole", floor: 12, note: "Smiling's his favorite" },
+    { hidden: true, keys: ["walter hobbs", "hobbs", "walter"], name: "Hobbs, W.", dept: "Children's Book Publishing", floor: 35, note: "Currently on the naughty list" },
+    { hidden: true, keys: ["scott farkus", "scut farkus", "farkus"], name: "Farkus, S.", dept: "Playground Relations", floor: "B2", note: "Yellow eyes. Proceed with caution." },
+    { hidden: true, keys: ["clark griswold", "griswold", "clark"], name: "Griswold, C.", dept: "Food Additives R&D", floor: 14, note: "Still waiting on his Christmas bonus" },
     { hidden: true, keys: ["kevin mccallister", "mccallister", "kevin"], name: "McCallister, K.", dept: "Home Security Consulting", floor: 8, note: "Accidentally left behind. Building fully booby-trapped." },
   ],
 
@@ -71,6 +74,7 @@ window.NAKATOMI = {
     { title: "Associate Dentist", where: "Floor 19", text: "Not everyone is cut out for toy-making. If you have other ambitions, we want to hear from you." },
     { title: "Pastry Chef", where: "Sugar Plum Bakery", text: "Early mornings, big parties, and the occasional nutcracker emergency. Please note: nothing we bake is gluten-free, and nothing ever will be." },
     { title: "Train Conductor", where: "Express Platform · Level P1", text: "Must be comfortable punching tickets. Hot chocolate service included." },
+    { title: "Food Additives Chemist", where: "Research & Development · Floor 14", text: "Help perfect our non-nutritive cereal varnish. Holiday bonus: a one-year membership in the Jelly of the Month Club." },
     { title: "Overnight Surveillance Associate", where: "Any shelf, any floor", text: "Must remain perfectly still while staff are present. Relocates nightly. Reports directly to the North Pole. Please do not touch." },
     { title: "Climate Technician", where: "Miser Bros. · Floor 35", text: "Must keep the peace between two brothers with very different opinions about the thermostat." },
     { title: "Pest Control Specialist", where: "Level B2", text: "Ongoing rodent situation. Experience working alongside toy soldiers preferred." },
