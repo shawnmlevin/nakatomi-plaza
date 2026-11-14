@@ -48,7 +48,7 @@
     if (!nq) { screen.innerHTML = header + pub.map((d) => row(d)).join(""); return; }
     const secret = N.directory.filter((d) => d.hidden && d.keys.some((k) => norm(k) === nq));
     secret.forEach((d) => track("secret-" + norm(d.keys[0])));
-    const matches = pub.filter((d) => norm(d.name + d.dept + (d.note || "")).includes(nq) || norm(d.floor) === nq);
+    const matches = pub.filter((d) => norm(d.name + d.dept + (d.note || "")).includes(nq) || norm(d.floor) === nq || (d.keys || []).some((k) => norm(k) === nq));
     const reply = (d) =>
       `<div class="reply hit">${esc(d.reply.toUpperCase())}` +
       (d.suggest ? `\nDID YOU MEAN <button type="button" class="suggest" data-q="${esc(d.suggest)}">${esc(d.suggest.toUpperCase())}</button>?` : "") +

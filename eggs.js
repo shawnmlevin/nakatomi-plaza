@@ -41,6 +41,7 @@ window.NAKATOMI = {
     // Cracked Nuts scenes
     { name: "Miser Bros. Climate Control", dept: "Heating (Mr. H.) & Cooling (Mr. C.)", floor: 35 },
     { name: "Rat Queen Pest Control", dept: "Building Services", floor: "B2" },
+    { name: "Farkus, S.", keys: ["scott farkus", "scut farkus"], dept: "Playground Relations", floor: "B2", note: "Yellow eyes. Proceed with caution." },
     { name: "Nutcracker Security Detail", dept: "Soldier Division", floor: "B2" },
     { name: "Precision Snow Removal", dept: "Rooftop Services", floor: "R" },
     { name: "Seasonal Staffing", dept: "Elf Relations", floor: 12 },
@@ -64,7 +65,6 @@ window.NAKATOMI = {
     { hidden: true, keys: ["john mcclane", "mcclane", "john mcclain", "mcclain"], name: "McClane, J.", dept: "Visitor, NYPD", floor: 30, note: "Came out to the coast for a few laughs" },
     { hidden: true, keys: ["buddy", "buddy the elf"], name: "Buddy", dept: "Elf Relations, on loan from the North Pole", floor: 12, note: "Smiling's his favorite" },
     { hidden: true, keys: ["walter hobbs", "hobbs", "walter"], name: "Hobbs, W.", dept: "Children's Book Publishing", floor: 35, note: "Currently on the naughty list" },
-    { hidden: true, keys: ["scott farkus", "scut farkus", "farkus"], name: "Farkus, S.", dept: "Playground Relations", floor: "B2", note: "Yellow eyes. Proceed with caution." },
     { hidden: true, keys: ["clark griswold", "griswold", "clark"], name: "Griswold, C.", dept: "Food Additives R&D", floor: 14, note: "Still waiting on his Christmas bonus" },
     { hidden: true, keys: ["kevin mccallister", "mccallister", "kevin"], name: "McCallister, K.", dept: "Home Security Consulting", floor: 8, note: "Accidentally left behind. Building fully booby-trapped." },
   ],
