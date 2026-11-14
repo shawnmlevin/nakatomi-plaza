@@ -8,7 +8,7 @@ window.NAKATOMI = {
   party: {
     entertainment: "Cracked Nuts",
     venue: "Suzanne Roberts Theatre, 480 S Broad St, Philadelphia",
-    dressCode: "Festive. Shoes optional.",
+    dressCode: "Festive",
     shows: [
       { day: "Fri, Dec 18", time: "7:00 PM", url: "https://www.flairdancecompany.com/event-details/cracked-nuts-friday-dec-18th-at-7pm" },
       { day: "Sat, Dec 19", time: "2:00 PM matinee", url: "https://www.flairdancecompany.com/event-details/cracked-nuts-saturday-dec-19th-at-2pm-matinee" },
@@ -78,7 +78,6 @@ window.NAKATOMI = {
     { title: "Overnight Surveillance Associate", where: "Any shelf, any floor", text: "Must remain perfectly still while staff are present. Relocates nightly. Reports directly to the North Pole. Please do not touch." },
     { title: "Climate Technician", where: "Miser Bros. · Floor 35", text: "Must keep the peace between two brothers with very different opinions about the thermostat." },
     { title: "Pest Control Specialist", where: "Level B2", text: "Ongoing rodent situation. Experience working alongside toy soldiers preferred." },
-    { title: "Prospector", where: "Cornelius Mining · Level B3", text: "Searching for silver and gold. Bring your own pickaxe. Peppermint experience a plus." },
   ],
 
   // EGG: the clue printed under the vault keypad
