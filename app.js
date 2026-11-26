@@ -17,10 +17,17 @@
   $$("[data-party]").forEach((el) => (el.textContent = N.party[el.dataset.party]));
   $$("[data-bakery]").forEach((el) => (el.textContent = N.bakery[el.dataset.bakery]));
   $("#specials").innerHTML = N.bakery.specials.map((s) => `<li>${esc(s)}</li>`).join("");
-  $("#shows").innerHTML = N.party.shows
-    .map((s) => `<li><span class="when"><strong>${esc(s.day)}</strong><span>${esc(s.time)}</span></span>` +
-      `<a class="rsvp" href="${esc(s.url)}" target="_blank" rel="noopener">RSVP</a></li>`)
-    .join("");
+  // Hide shows whose date has passed (visitor's local date). ?asof=YYYY-MM-DD previews another day.
+  const now = new Date();
+  const todayISO = new URLSearchParams(location.search).get("asof") ||
+    `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
+  const upcoming = N.party.shows.filter((s) => !s.date || s.date >= todayISO);
+  $("#shows").innerHTML = upcoming.length
+    ? upcoming
+        .map((s) => `<li><span class="when"><strong>${esc(s.day)}</strong><span>${esc(s.time)}</span></span>` +
+          `<a class="rsvp" href="${esc(s.url)}" target="_blank" rel="noopener">RSVP</a></li>`)
+        .join("")
+    : `<li class="wrap">That's a wrap. Thanks for coming to the party.</li>`;
   $("#jobs").innerHTML = N.careers
     .map((j) => `<article class="card"><p class="floor">${esc(j.where)}</p><h3>${esc(j.title)}</h3><p>${esc(j.text)}</p></article>`)
     .join("");

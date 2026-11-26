@@ -112,6 +112,7 @@ nav a:hover { color: var(--gold-lt); }
 .shows .when span { color: #c6cddd; font-size: 15px; }
 .rsvp { flex: none; background: var(--gold); color: #fff; text-decoration: none; font: 600 12px/1 var(--sans); letter-spacing: .16em; padding: 11px 14px; border-radius: 2px; }
 .rsvp:hover { background: var(--bronze); }
+.shows li.wrap { justify-content: center; text-align: center; font: italic 20px/1.3 var(--serif); color: var(--gold-lt); }
 
 /* Vault */
 .vault { background: #07090f; color: #e8ebf2; text-align: center; }

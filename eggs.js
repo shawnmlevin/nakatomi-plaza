@@ -10,10 +10,11 @@ window.NAKATOMI = {
     venue: "Suzanne Roberts Theatre, 480 S Broad St, Philadelphia",
     dressCode: "Festive",
     shows: [
-      { day: "Fri, Dec 18", time: "7:00 PM", url: "https://www.flairdancecompany.com/event-details/cracked-nuts-friday-dec-18th-at-7pm" },
-      { day: "Sat, Dec 19", time: "2:00 PM matinee", url: "https://www.flairdancecompany.com/event-details/cracked-nuts-saturday-dec-19th-at-2pm-matinee" },
-      { day: "Sat, Dec 19", time: "7:00 PM", url: "https://www.flairdancecompany.com/event-details/cracked-nuts-saturday-dec-19th-at-7pm" },
-      { day: "Sun, Dec 20", time: "5:00 PM", url: "https://www.flairdancecompany.com/event-details/cracked-nuts-sunday-dec-20th-at-5pm" },
+      // Each show disappears automatically the day after its date
+      { date: "2026-12-18", day: "Fri, Dec 18", time: "7:00 PM", url: "https://www.flairdancecompany.com/event-details/cracked-nuts-friday-dec-18th-at-7pm" },
+      { date: "2026-12-19", day: "Sat, Dec 19", time: "2:00 PM matinee", url: "https://www.flairdancecompany.com/event-details/cracked-nuts-saturday-dec-19th-at-2pm-matinee" },
+      { date: "2026-12-19", day: "Sat, Dec 19", time: "7:00 PM", url: "https://www.flairdancecompany.com/event-details/cracked-nuts-saturday-dec-19th-at-7pm" },
+      { date: "2026-12-20", day: "Sun, Dec 20", time: "5:00 PM", url: "https://www.flairdancecompany.com/event-details/cracked-nuts-sunday-dec-20th-at-5pm" },
     ],
   },
 
@@ -24,7 +25,6 @@ window.NAKATOMI = {
     specials: [
       "Donuts",
       "Hot chocolate, served hot",
-      "Gingerbread, any shape",
       "Twinkies (by request of LAPD)",
     ],
   },
